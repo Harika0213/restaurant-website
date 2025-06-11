@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CollegeResto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* contact.css - Integrated from previous */
+        
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            flex: 1;
+            border-radius: 8px;
+        }
+
+        .contact-left {
+            flex: 0 0 45%; /* Adjust width as needed */
+            padding-right: 30px;
+        }
+
+        .contact-left img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .contact-right {
+            flex: 1;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-right h2 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .contact-right p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="number"],
+        .form-group input[type="datetime-local"],
+        .form-group textarea {
+            width: calc(100% - 12px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background-color: #f44336; /* W3Schools red */
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #d32f2f;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .contact-info h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .contact-info p {
+            line-height: 1.6;
+            color: #777;
+            margin-bottom: 8px;
+        }
+
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        
+        
+
+        /* New styles to align with W3Schools template */
+        .contact-form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .contact-form-container h2 {
+            font-size: 2em;
+            color: #e84343;
+            margin-bottom: 15px;
+            text-align: left; /* Align with the form */
+        }
+
+        .contact-form-container p {
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.6;
+            text-align: left; /* Align with the form */
+        }
+
+        .contact-form-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .contact-form-container input[type=text],
+        .contact-form-container input[type=number],
+        .contact-form-container input[type=datetime-local],
+        .contact-form-container textarea {
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Important for padding to be inside width */
+            font-size: 1em;
+        }
+
+        .contact-form-container textarea {
+            resize: vertical;
+        }
+
+        .contact-form-container button[type=submit] {
+            background-color: #e84343;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 4px;
+            font-size: 1.1em;
+        }
+
+        .contact-form-container button[type=submit]:hover {
+            opacity: 0.8;
+        }
+
+        .contact-info-container {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .contact-info-container h3 {
+            font-size: 1.8em;
+            color: #e84343;
+            margin-bottom: 10px;
+        }
+
+        .contact-info-container p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .contact-info-container i {
+            margin-right: 8px;
+            color: #545252; /* Accent color */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="nav-1">
+                <div class="logo">Bite & Bloom</div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-left img">
+                <img src="images/contactus1.png" height="400px"><br><br>
+                <img src ="images/contactus2.webp" height="350px">
+            </div>
+            <div class="contact-right">
+                <div class="contact-form-container">
+                    <h2>Contact Us</h2>
+                    <p>We'd love to hear from you! Fill out this form and we'll get back to you as soon as possible.</p>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            
+                            <input type="number" id="people" name="people" placeholder="Number of People"  min = "0"  required>
+                        </div>
+                        <div class="form-group">
+                            <input type="datetime-local" id="date" name="date"  placeholder="Date and time" value="2025-04-16T20:00" required>
+                        </div>
+                        <div class="form-group">
+                            
+                            <textarea id="message" name="message" rows="5" placeholder="Message\Special Requirements" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-container">
+                    <h3>Find Us</h3>
+                    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> College Area, Vijayawada, Andhra Pradesh, India</p>
+                    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> +91 XXXXXXXXXX</p>
+                    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> info@collegeresto.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

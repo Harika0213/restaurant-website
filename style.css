@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background : url(images/Background2.png);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px 0px 50px;
+    height: 70px;
+    align-items: center;
+}
+.links{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+.nav-1{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+.logo{
+    color: orange;
+    font-size: 30px;
+    font-weight: 600;
+}
+.navbar li {
+    font-size: 19px;
+    color: orange;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: hsl(0, 0%,10%);
+}
+
+
+
+.icons{
+    display: flex;
+    gap: 35px;
+}
+.icons i{
+    font-size: 25px;
+    color: black;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    margin-top:80px ;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    padding-left:  240px;
+    align-items: start;
+}
+.p1{
+    font-size: 30px;
+    font-style: italic;
+}
+.p2{
+    font-size: 85px;
+    font-weight: 600;
+}
+.p3{
+    font-size: 27px;
+    font-style: italic;
+    color: orange;
+    margin-bottom: 15px;
+}
+.p4{
+    border: 2px solid white;
+    padding: 5px 15px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+}
+.food{
+    border: 2px solid white;
+    border-radius: 50%;
+}
+#food{
+    background: url(images/food.png);
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+}
+.items{
+    display: flex;
+    padding-left: 150px;
+    margin-top: -50px;
+    gap: 20px;
+}
+#food1,
+#food2, 
+#food3, 
+#food4{
+    border: 2px solid white;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+#food1{
+    background:url(images/food1.png) ;
+    background-size: cover;
+}
+#food2{
+    background:url(images/food2.png) ;
+    background-size: cover;
+}
+#food3{
+    background:url(images/food3.png) ;
+    background-size: cover;
+}
+#food4{
+    background:url(images/food4.png) ;
+    background-size: cover;
+}
+
+
+/**menu dropdown**/
+.menu-dropdown{
+    display: inline-block;
+}
+.menu-dropdown button {
+    background-color: hsl(0,0%,80%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+.menu-dropdown .content {
+    display: none;
+    position: absolute;
+    background-color: hsl(0,0%, 95%);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8);
+}
+
+.menu-dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.menu-dropdown:hover.content{
+    display: block;
+}
+
+
+.menu-dropdown:hover button{
+    background-color: hsl(0,0%, 70%);
+}
+
+.menu-dropdown a:hover{
+    background-color: hsl(0, 7%, 92%);
+}
+
+
+/* ... other CSS rules ... */
+

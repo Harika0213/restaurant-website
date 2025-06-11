@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollegeResto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="nav-1">
+                <div class="logo">Bite & Bloom</div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
+            
+        </div>
+        <div class="hero">
+            <div class="left">
+                <span class="p1">Are you hungry?</span>
+                <span class="p2">Don't wait</span>
+                <span class="p3">Let's start to order food now</span>
+                <a href="menu.html" class="p4">check out menu</a>
+            </div>
+            <div class="food" id="food" ></div>
+        </div>
+        <div class="items">
+            <div id="food1"></div>
+            <div id="food2"></div>
+            <div id="food3"></div>
+            <div id="food4"></div>
+        </div>
+    </div>
+    <script>
+        food1.onclick= function(){
+            food.style.backgroundImage= "url('images/food1.png')";
+        }
+        food2.onclick= function(){
+            food.style.backgroundImage= "url('images/food2.png')";
+        }
+        food3.onclick= function(){
+            food.style.backgroundImage= "url('images/food3.png')";
+        }
+        food4.onclick= function(){
+            food.style.backgroundImage= "url('images/food4.png')";
+        }   
+    </script>
+</body>
+</html>

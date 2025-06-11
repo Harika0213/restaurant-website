@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Special Menu - CollegeResto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Specific CSS for the menu page will be in style.css */
+       
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .menu{
+            padding: 0 10px 30px 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-gap: 20px 40px;    
+        }
+
+        .heading{
+            background:#e84343;
+            color: #fff;
+            margin-bottom:30px ;
+            padding: 30px 0;
+            grid-column: 1/-1;
+            text-align: center;
+        }
+        
+        .heading h3{
+            font-weight: 600;
+            font-size: 22px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+        
+        .food-items{
+            display: grid;
+            position: relative;
+            grid-template-rows: auto 1fr;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+            transition: .2s ease-in-out;
+            background-color: #fff;
+            
+            
+        }
+        .food-items img{
+            position: relative;
+            width:336px;
+            height:230px;
+            border-top-left-radius: 1em 1em;
+            border-top-right-radius: 1em 1em;
+            cursor: pointer;
+
+        }
+        .food-rating {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .rating-star {
+            color: orange;
+            font-size: 1.2em;
+        }
+        .empty-star {
+            color: black;
+            font-size: 1.2em;
+        }
+
+        h1{
+            grid-column: 1/-1;
+            text-align: center;
+        }
+        .details{
+            padding: 20px 10px;
+            display: grid;
+            grid-template-rows: auto 1fr 50px;
+            grid-row-gap: 15px;
+        }
+        .details-sub{
+            display: grid;
+            grid-template-columns: auto auto;
+
+        }
+        .details-sub h5{
+            font-weight: 600;
+            font-size: 18px;
+        }
+        .price{
+            text-align: right;
+        }
+        .details p{
+            color: #6f6f6f;
+            font-size: 15px;
+            line-height: 28px;
+            font-weight: 400;
+            align-self: stretch;
+        }
+        .details button{
+            background: #e84343;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius :5px; 
+            width: 180px;
+            cursor: pointer;
+        }
+        .details button:hover{
+            background: #fc0101;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main menu-page">
+        <div class="navbar">
+            <div class="nav-1">
+                <div class="logo">Bite & Bloom</div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>   
+        </div>
+        <div class="menu">
+            <div class="heading">
+                <h3>&mdash;menu&mdash;</h3>
+            </div>
+
+            <div class="food-items">
+                <img src="images/burger.jpg" width="350px">
+                <div class="food-rating">
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                </div>
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Burger</h5>
+                        <h5 class="price">$9</h5>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptate adipisci. 
+                        exercitationem maxime inventore explicabo iste provident, quos nesciunt corporis tempora!</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="food-items">
+                <img src="images/pizza.jpg">
+                <div class="food-rating" data-rating="3.5">
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star"></span>
+                    <span class="fa fa-star empty-star"></span>
+                </div>
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Pizzza</h5>
+                        <h5 class="price">$14</h5>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptate adipisci. 
+                        exercitationem maxime inventore explicabo iste provident, quos nesciunt corporis tempora!</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="food-items">
+                <img src="images/chicken.jpg">
+                <div class="food-rating">
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star-half-o rating-star checked"></span>
+                </div>
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Grilled Chicken</h5>
+                        <h5 class="price">$15</h5>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptate adipisci. 
+                        exercitationem maxime inventore explicabo iste provident, quos nesciunt corporis tempora!</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="food-items">
+                <img src="images/Noodles.jpg">
+                <div class="food-rating">
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star empty-star"></span>
+                    <span class="fa fa-star empty-star"></span>
+                </div>
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Noodles</h5>
+                        <h5 class="price">$11</h5>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptate adipisci. 
+                        exercitationem maxime inventore explicabo iste provident, quos nesciunt corporis tempora!</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="food-items">
+                <img src="images/salads.jpg">
+                <div class="food-rating">
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star-half-o rating-star checked"></span>
+                    <span class="fa fa-star empty-star"></span>
+                </div>
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Salad</h5>
+                        <h5 class="price">$13</h5>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptate adipisci. 
+                        exercitationem maxime inventore explicabo iste provident, quos nesciunt corporis tempora!</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="food-items">
+                <img src="images/Meat.jpg">
+                <div class="food-rating">
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star-half-o rating-star checked"></span>
+                    <span class="fa fa-star empty-star"></span>
+                </div>
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Meat</h5>
+                        <h5 class="price">$20</h5>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptate adipisci. 
+                        exercitationem maxime inventore explicabo iste provident, quos nesciunt corporis tempora!</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="food-items" id="gap">
+                <img src="images/pasta.jpg">
+                <div class="food-rating">
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                </div>
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Pasta</h5>
+                        <h5 class="price">$15</h5>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptate adipisci. 
+                        exercitationem maxime inventore explicabo iste provident, quos nesciunt corporis tempora!</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="food-items" id="gap">
+                <img src="images/Momos.jpg">
+                <div class="food-rating">
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star rating-star checked"></span>
+                    <span class="fa fa-star empty-star"></span>
+                </div>
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Momos</h5>
+                        <h5 class="price">$12</h5>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptate adipisci. 
+                        exercitationem maxime inventore explicabo iste provident, quos nesciunt corporis tempora!</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+
+</body>
+</html>
